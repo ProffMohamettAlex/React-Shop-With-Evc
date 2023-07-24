@@ -64,7 +64,7 @@ const Payment = () => {
 			setLoading(true);
 			const { data } = await axios.post("https://api.waafi.com/asm",
 			 body);
-			
+			setLoading(false);
 
 			const info = data.responseMsg.split("ERRCODE");
 			// success
