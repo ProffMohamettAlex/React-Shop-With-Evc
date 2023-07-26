@@ -3,10 +3,10 @@ import Product from "./Product";
 const products = [
 	{
 		id: 1,
-		name: "Large Pizza",
+		name: " Pizza Somali",
 		urlImage:
 			"https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=800",
-		price: 99.99,
+		price: 25.99,
 	},
 	{
 		id: 2,
