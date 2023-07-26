@@ -5,6 +5,7 @@ import toast from "react-hot-toast";
 
 const Payment = () => {
 	const initialPayment = {
+		debit:false,
 		evc: false,
 		zaad: false,
 		sahal: false,
@@ -97,17 +98,24 @@ const Payment = () => {
 	return (
 		<div>
 			<h2>Pay With</h2>
+			<div
+					className={`payment-card ${paymentMethod.debit && "selected"}`}
+					onClick={() => setPaymentMethod({ ...initialPayment, debit: true })}>
+					<h3>Master Card</h3>
+				</div>
 			<div className="paymet-cards">
 				<div
 					className={`payment-card ${paymentMethod.zaad && "selected"}`}
 					onClick={() => setPaymentMethod({ ...initialPayment, zaad: true })}>
 					<h3>Zaad Service</h3>
 				</div>
+
 				<div
 					className={`payment-card ${paymentMethod.evc && "selected"}`}
 					onClick={() => setPaymentMethod({ ...initialPayment, evc: true })}>
 					<h3>Evc Plus</h3>
 				</div>
+				
 				<div
 					className={`payment-card ${paymentMethod.sahal && "selected"}`}
 					onClick={() => setPaymentMethod({ ...initialPayment, sahal: true })}>
