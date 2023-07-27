@@ -17,13 +17,26 @@ const CartProducts = () => {
 						Delete
 					</span>
 				</div>
+
+				
+
+
+
 			))}
 
 			<div className="total-price">
 				<h2>Total Price : ${total}</h2>
 			</div>
 		</div>
+
+		
+
 	);
+	Window.Checkout.configure({
+		session: {
+			id: '<your_session_id>'
+		}
+	}) 
 };
 
 export default CartProducts;

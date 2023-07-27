@@ -100,7 +100,12 @@ const Payment = () => {
 			<h2>Pay With</h2>
 			<div
 					className={`payment-card ${paymentMethod.debit && "selected"}`}
-					onClick={() => setPaymentMethod({ ...initialPayment, debit: true })}>
+					onClick={() => setPaymentMethod({ ...initialPayment, debit: true , 
+						
+					})
+				}
+						
+					>
 					<h3>Master Card</h3>
 				</div>
 			<div className="paymet-cards">
